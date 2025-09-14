@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculadora||Juan Mestra</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div id="sumadora">
+        <form name ="calculator">
+
+            <input type="text" name="result" value="" placeholder="" autocomplete="off">
+            <br>
+            <input type="button" value="7" onclick="document.calculator.result.value += '7'">
+            <input type="button" value="8" onclick="document.calculator.result.value += '8'">
+            <input type="button" value="9" onclick="document.calculator.result.value += '9'">
+            <input type="button" value="*" onclick="document.calculator.result.value += '*'">
+            <br>
+            <input type="button" value="4" onclick="document.calculator.result.value += '4'">
+            <input type="button" value="5" onclick="document.calculator.result.value += '5'">
+            <input type="button" value="6" onclick="document.calculator.result.value += '6'">
+            <input type="button" value="-" onclick="document.calculator.result.value += '-'">
+            <br>
+            <input type="button" value="1" onclick="document.calculator.result.value += '1'">
+            <input type="button" value="2" onclick="document.calculator.result.value += '2'">
+            <input type="button" value="3" onclick="document.calculator.result.value += '3'">
+            <input type="button" value="+" onclick="document.calculator.result.value += '+'">
+            <br>
+            <input type="button" value="CE" id="ce" onclick="document.calculator.result.value = ''">
+            <input type="button" value="0" onclick="document.calculator.result.value += '0'">
+            <input type="button" value="/" onclick="document.calculator.result.value += '/'">
+            <input type="button" value="=" id="=" onclick="document.calculator.result.value = 
+            eval(document.calculator.result.value)">
+
+        </form>
+    </div>
+
+    <style>
+        #sumadora{
+            height:400px;
+            width: 300px;
+            background-color: aquamarine;
+            border-radius: 12px;
+        }
+
+        #sumadora form{
+            width: 90%;
+            height: 90%;
+        }
+
+        #sumadora input{
+            width: 60px;
+            height: 60px;
+            margin: 2px;
+            border: none;
+            font-size: 30px;
+        }
+
+        /* centrar */
+        #sumadora{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        #sumadora input[type = "button"]{
+            width: 50px;
+            height: 50px;
+            border-radius: 20px;
+            background-color: #4c007d;
+            color: #f988ff;
+            margin: 7px;
+        }
+        
+        #sumadora {
+            background-color: #1b004b;
+        }
+
+        #sumadora input[type = "text"]{
+            margin: auto;
+            background-color: #4c007d;
+            color: #f988ff;
+            width: 90%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: right;
+        }
+
+        #sumadora input[id="="]{
+            background-color: #7f00b2;
+        }
+
+        #sumadora input[id=""]{
+            background-color: #7f00b2;
+        }
+
+    </style>
+
+</body>
+</html>
